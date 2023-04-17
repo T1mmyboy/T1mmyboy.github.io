@@ -8,6 +8,7 @@ body{
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
+    pointer-events: stroke;
 }
 #alles{
     padding: 20px;
