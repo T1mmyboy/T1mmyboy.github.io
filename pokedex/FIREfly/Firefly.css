@@ -1,0 +1,16 @@
+body{
+    pointer-events: none;
+    background-size: 100%;
+    background-image: url(https://wallpapercrafter.com/desktop8/1915025-pixel-art-pixelated-nature-landscape-pixels-digital.jpg);
+}
+#character{
+    position: absolute;
+}
+#image{
+    width: 200px;
+    border-radius: 60%;
+
+}
+
+
+

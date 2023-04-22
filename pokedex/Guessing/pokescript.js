@@ -27,18 +27,16 @@ document.onmousedown = (e) => {
     e.preventDefault();
 }
 
-
-if (bezig == false){
  input.addEventListener("keypress", function(event){
+    if (bezig == false){
     if (event.key == "Enter") {
         var tekst = input.value
         tekst = tekst.charAt(0).toUpperCase() + tekst.slice(1);
       if (tekst == namelist[randomNumber]){correct();}
       else{wrong();}}
-    
-})}
+    }})
 
-function correct(){
+function correct(){//this is for when you guess right
     bezig = true
     console.log(namelist)
     Pokemonname()
@@ -49,7 +47,7 @@ function correct(){
     bezig = false
 }
 
-function wrong(){
+function wrong(){//this is for when you guess wrong
     bezig = true
     Pokemonname()
     amountFalse +=1
@@ -59,11 +57,11 @@ function wrong(){
     bezig = false
     
 }
-function Pokemonname(){
+function Pokemonname(){//This is for showing the pokemons name after guessing
     result.innerText = namelist[randomNumber].toUpperCase()
     setTimeout(2000)
 }
-function Reset(){
+function Reset(){//This is for removing the current pokemon and showing the next one
     while (true){
     randomNumber = Math.floor(Math.random() * namelist.length);
     if (pokedex.includes(randomNumber)){
@@ -84,7 +82,8 @@ function Reset(){
     pokemon.style.filter = "brightness(0%)"
     return randomNumber}
 }
-function completed(){
+
+function completed(){//This is the end screen
     alles.style.backgroundColor = "lightgreen"
     alles.innerHTML = "Congratulations, you passed the quiz!"+"<br>"+"Your score was "+ 
     Math.round(amountCorrect*100/namelist.length)+"% Correct and "+Math.round(amountFalse*100/namelist.length)+"% Wrong"

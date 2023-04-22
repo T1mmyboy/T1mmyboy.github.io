@@ -1,20 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 body{
     background-color: rgb(85, 85, 85);
+    color: white;
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
-    pointer-events: stroke;
 }
 #alles{
     padding: 20px;
     padding-bottom: 50px;
-    background-repeat: repeat;
-    background-size: 100%;
     text-align: center;
     border-radius: 20px;
     
@@ -24,4 +17,9 @@ body{
 }
 #counter, #correct{
     font-family: "Arial", "Helvetica", "sans-serif";
+}
+#back{
+    text-align: left;
+    text-decoration: none;
+    color: white;
 }
