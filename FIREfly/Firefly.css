@@ -5,8 +5,11 @@ html{
 }
 body{
     pointer-events: none;
-    background-image: url(https://wallpapercrafter.com/desktop8/1915025-pixel-art-pixelated-nature-landscape-pixels-digital.jpg);
-    background-size: 1440px;
+    background: linear-gradient(rgb(0, 93, 93), rgb(0, 182, 182));
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #character{
     position: absolute;

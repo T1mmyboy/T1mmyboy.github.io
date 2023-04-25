@@ -22,11 +22,6 @@ var amountCorrect = 0
 var amountFalse = 0
 var randomNumber = Reset()
 var bezig = false
-
-document.onmousedown = (e) => {
-    e.preventDefault();
-}
-
  input.addEventListener("keypress", function(event){
     if (bezig == false){
     if (event.key == "Enter") {
