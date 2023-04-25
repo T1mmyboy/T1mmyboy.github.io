@@ -3,13 +3,14 @@ var image = document.getElementById("image")
 var snelheid = 3000//how fast the fire moves
 document.addEventListener("click",moveImage)
 var alles = document.getElementById("alles")
+var hints = document.getElementById("endScreen")
 var coins = document.createElement("img")
-var highscore = 0//keeping track of the seconds that you live
+var score = 0//keeping track of the seconds that you live
 var opacity = 1//how much energy you still have
 
 var MoveFire = function() {//to make the fire move faster each time it moves
-    if (snelheid *0.9 > 800){
-    snelheid *= 0.9;}
+    if (snelheid *0.95 > 800){
+    snelheid *= 0.95;}
     spawnFire()
     setTimeout(MoveFire, snelheid);
 }
@@ -56,21 +57,23 @@ function spawnFire(){//to spawn the fire somewhere on the screen
 
 function removeCoins(){//to check if firefly and fire overlap
     checkcharacter = firefly.getBoundingClientRect()
-    checkcoin = coins.getBoundingClientRect()
+    checkfire = coins.getBoundingClientRect()
     return !(
-        checkcharacter.top > checkcoin.bottom ||
-        checkcharacter.right < checkcoin.left ||
-        checkcharacter.bottom < checkcoin.top ||
-        checkcharacter.left > checkcoin.right
+        checkcharacter.top > checkfire.bottom ||
+        checkcharacter.right < checkfire.left ||
+        checkcharacter.bottom < checkfire.top ||
+        checkcharacter.left > checkfire.right
       );
 }
-var highscoreSetter = setInterval(function(){highscore+=1}, 1000)//counts the seconds and adds them to your highscore
-
-function losing(){//to show that you lost and show your highscore
-    clearInterval(highscoreSetter)
+var scoreSetter = setInterval(function(){
+    score+=1; 
+    if(score > 6){hints.textContent = ""}
+    else{hints.textContent = "Click to move. You constantly lose  energy by glowing, consume fire for more energy."}}, 1000)//counts the seconds and adds them to your score
+function losing(){//to show that you lost and show your score
+    clearInterval(scoreSetter)
     clearInterval(hungerMeter)
     clearInterval(SpawningCoins)
     document.body.style.backgroundImage="none"
-    document.body.innerHTML ="You died!"+"</br>"+"Highscore: "+highscore+"s"
-
+    document.body.style.backgroundColor = "darkcyan"
+    document.body.innerHTML = "You ran out of energy!"+"</br>"+"Highscore: "+score+"s"+"</br>"+"If you wish to play again, please refresh this page."
 }
