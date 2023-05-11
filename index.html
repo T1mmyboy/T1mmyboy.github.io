@@ -24,13 +24,34 @@
     </ul>
   </section>
   <div class="row">
-    <div class="naam"><h1 class="col-sm-12 col-md-3 col-lg-7">About me</h1></div>
-    <h3 class="col-sm-12 col-md-3 col-lg-7" id="hobbies">Mijn naam is Tim van der Wulp. Ik kom uit Dordrecht en ik zit op Da Vinci College Gorinchem op school. Ik volg de opleiding: Software Developer. Ik zit in het 1ste jaar.</h3>
-    <div class="naam"><h1 class="col-sm-12 col-md-3 col-lg-7">Versneltraject</h1></div>
-    <h3 class="col-sm-12 col-md-3 col-lg-7">Ik doe het versneltraject op het Insula College in Dordrecht. Dat betekent dat ik 2 opleidingen tegelijk doe. Toen ik in de 3rde zat heb ik al 4 van mijn eindexamens gedaan en in de 4rde ga ik 4 dagen in de week naar Gorinchem voor MBO en 1 dag in de week naar Dordrecht om mijn laatste 2 examens af te maken dit jaar.</h3>
-    <div class="naam"><h1 class="col-sm-12 col-md-3 col-lg-7">Hobbies</h1></div>
-    <h3 class="col-sm-12 col-md-3 col-lg-7">Ik heb een aantal hobbies. Voetbal, ik speel al 6 jaar en ik sta links achterin. Een andere hobby is natuurlijk programmeren. Omdat je kan maken wat je zou willen, alles is mogelijk. Dat is waarom ik het zo leuk vindt.</h3>
+    <div class="naam"><h1 class="col-sm-3 col-md-3 col-lg-3" id="aboutmeB">About me</h1></div>
+    <h3 class="col-sm-12 col-md-3 col-lg-7" id="aboutme">Mijn naam is Tim van der Wulp. Ik kom uit Dordrecht en ik zit op Da Vinci College Gorinchem op school. Ik volg de opleiding: Software Developer. Ik zit in het 1ste jaar.</h3>
+    <div class="naam" ><h1 class="col-sm-3 col-md-3 col-lg-3" id="versneltrajectB">Versneltraject</h1></div>
+    <div id="versneltraject" class="row"><h3 class="col-sm-12 col-md-3 col-lg-7">Ik doe het versneltraject op het Insula College in Dordrecht. Dat betekent dat ik 2 opleidingen tegelijk doe. Toen ik in de 3rde zat heb ik al 4 van mijn eindexamens gedaan en in de 4rde ga ik 4 dagen in de week naar Gorinchem voor MBO en 1 dag in de week naar Dordrecht om mijn laatste 2 examens af te maken dit jaar.</h3></div>
+    <div class="naam"><h1 class="col-sm-3 col-md-3 col-lg-3" id="hobbyB">Hobbies</h1></div>
+    <div id="Hobbies" class="row"><h3 class="col-sm-12 col-md-7 col-lg-7">Ik heb een aantal hobbies. Voetbal, ik speel al 6 jaar en ik sta links achterin. Een andere hobby is natuurlijk programmeren. Omdat je kan maken wat je zou willen, alles is mogelijk. Dat is waarom ik het zo leuk vindt.</h3></div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+      var buttonAboutMe = document.getElementById("aboutmeB")
+      var buttonVT = document.getElementById("versneltrajectB")
+      var buttonHobby = document.getElementById("hobbyB")
+
+      var aboutme = document.getElementById("aboutme")
+      var VT = document.getElementById("versneltraject")
+      var hobbies = document.getElementById("Hobbies")
+
+      buttonAboutMe.onclick = function(){
+        if (aboutme.style.display == "block"){aboutme.style.display = "none"}
+        else{aboutme.style.display = "block"}
+      }
+      buttonVT.onclick = function(){
+        if (VT.style.display == "block"){VT.style.display = "none"}
+        else{VT.style.display = "block"}
+      }
+      buttonHobby.onclick = function(){
+        if (hobbies.style.display == "block"){hobbies.style.display = "none"}
+        else{hobbies.style.display = "block"}
+      }
+    </script>
   </body>

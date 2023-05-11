@@ -148,3 +148,29 @@ a:hover{
 body{
     background-color: cyan;
 }
+#Hobbies{
+  display: none;
+}
+#versneltraject{
+  display: none;
+}
+#aboutme{
+  display: none;
+}
+#aboutmeB{
+  padding: 10px;
+  background: linear-gradient(darkcyan,cyan);
+  border-bottom-right-radius: 20px;
+}
+#versneltrajectB{
+  padding: 10px;
+  background: linear-gradient(darkcyan,cyan);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#hobbyB{
+  padding: 10px;
+  background: linear-gradient(darkcyan,cyan);
+  border-top-right-radius: 20px;
+
+}
