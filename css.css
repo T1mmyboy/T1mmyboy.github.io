@@ -8,7 +8,31 @@ html, body {
   margin: 0;
   height: 100%;
 }
+body{
 
+  animation-name: achtergrond;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+
+}
+@keyframes achtergrond{
+  0%{background-color:#439A97}
+  33%{background-color:#62B6B7}
+  66%{background-color:#44ac93}
+  100%{background-color:#59946a}
+}
+@keyframes achtergrond2 {
+  0%{background-color:#59946a}
+  33%{background-color:#44ac93}
+  66%{background-color:#62B6B7}
+  100%{background-color:#439A97}
+}
+@keyframes tekst{
+  0%{display:block;}
+  100%{display:none;}
+}
 * {
   font-family: "Raleway";
   box-sizing: border-box;
@@ -19,8 +43,11 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #00BAF0;
-  background: linear-gradient(to right, #45e0f4, #49ee9b);
+  animation-name: achtergrond;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
   color: #FFF;
   height: 50px;
   padding: 1em;
@@ -159,18 +186,30 @@ body{
 }
 #aboutmeB{
   padding: 10px;
-  background: linear-gradient(darkcyan,cyan);
+  animation-name: achtergrond2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
   border-bottom-right-radius: 20px;
 }
 #versneltrajectB{
   padding: 10px;
-  background: linear-gradient(darkcyan,cyan);
+  animation-name: achtergrond2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 #hobbyB{
   padding: 10px;
-  background: linear-gradient(darkcyan,cyan);
+  animation-name: achtergrond2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
   border-top-right-radius: 20px;
 
 }
