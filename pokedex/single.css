@@ -1,0 +1,97 @@
+/* styles.css */
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background-color: #e62117;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  #pokedex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .pokemon-card {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .pokemon-card img {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  h1 {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 55px;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  a {
+    position: absolute;
+    left: 30px;
+    text-decoration: none;
+    color: white;
+  }
+.content-container{
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 3px groove #333;
+    margin: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.types-container div{
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 7px;
+    border: 2px solid #333;
+    border-radius: 100000px;
+    text-transform: uppercase;
+    color: white;
+}
+.grass { background-color: #63BB5B; }
+.fire { background-color: #ff9c54; }
+.water { background-color: #4c90d5; }
+.bug { background-color: #90c12c; }
+.flying { background-color: #8fa8dd; }
+.poison { background-color: #aa5da1; }
+.rock { background-color: #baab82; }
+.ground { background-color: #dfbf6f; }
+.fighting { background-color: #d56723; }
+.psychic { background-color: #f7708e; }
+.ice { background-color: #70ccbd; }
+.normal { background-color: #929ba3; }
+.fairy { background-color: #ec8fe6; }
+.dragon { background-color: #7038f8; }
+.ghost { background-color: #705898; }
+.electric { background-color: #f7d02c; }
+.dark { background-color: #745945; }
+.steel { background-color: #b8b8d0; }
