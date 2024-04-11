@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.character-info, .abilities {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+.ability {
+    display: inline-block;
+    width: 90%;
+
+}
+
+.ability input {
+    width: 90%;
+}
+
+.abilities {
+    width: 45%;
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+.proficiencies{
+    width: 45%;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #f0f0f0;
+    vertical-align: top;
+    padding: 15px;
+    border: 2px black solid;
+
+}
+.proficiency{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.proficiency :hover{
+    cursor: pointer;
+}
+.proficiency input[type="checkbox"] {
+    order: 2; /* Place the checkbox at the end */
+    margin-left: 10px; /* Adjust margin as needed */
+}

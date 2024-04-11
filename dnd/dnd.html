@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Character Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dungeons & Dragons Character Sheet</h1>
+        <div class="form-group">
+            <label for="char-name">Name:</label>
+            <input type="text" id="char-name" name="char-name">
+            <span class="input-value" id="char-name-value"></span>
+        </div>
+        <div class="form-group">
+            <label for="char-race">Race:</label>
+            <input type="text" id="char-race" name="char-race">
+            <span class="input-value" id="char-race-value"></span>
+        </div>
+        <div class="form-group">
+            <label for="char-class">Class:</label>
+            <input type="text" id="char-class" name="char-class">
+            <span class="input-value" id="char-class-value"></span>
+        </div>
+        <div class="form-group">
+            <label for="char-level">Level:</label>
+            <input type="number" id="char-level" name="char-level" min="1" max="20">
+            <span class="input-value" id="char-level-value"></span>
+        </div>
+        <div class="form-group">
+            <label for="char-hitdie">Hit Die:</label>
+            <input type="number" id="char-hitdie" name="char-hitdie" min="1" max="20">
+        </div>
+        <div class="form-group">
+            <label for="extra-ac">Extra AC:</label>
+            <input type="number" id="extra-ac" name="extra-ac" min="0">
+        </div>
+        <div class="form-group">
+            <p>HP:</p>
+            <span class="hp-value" id="char-hp-value"></span>
+        </div>
+        <div class="form-group">
+            <p>AC:</p>
+            <span class="ac-value" id="char-ac-value"></span>
+        </div>
+        
+            <!-- Add more character information fields as needed -->
+
+            <div class="abilities">
+                <h2>Abilities</h2>
+                <div class="ability">
+                    <label for="str">Strength:</label>
+                    <input type="number" id="str" name="str" min="-5" max="5">
+                    <span class="input-value" id="str-value"></span>
+                </div>
+                <div class="ability">
+                    <label for="dex">Dexterity:</label>
+                    <input type="number" id="dex" name="dex" min="-5" max="5">
+                    <span class="input-value" id="dex-value"></span>
+                </div>
+                <div class="ability">
+                    <label for="con">Constitution:</label>
+                    <input type="number" id="con" name="con" min="-5" max="5">
+                    <span class="input-value" id="con-value"></span>
+                </div>
+                <div class="ability">
+                    <label for="int">Intelligence:</label>
+                    <input type="number" id="int" name="int" min="-5" max="5">
+                    <span class="input-value" id="int-value"></span>
+                </div>
+                <div class="ability">
+                    <label for="wis">Wisdom:</label>
+                    <input type="number" id="wis" name="wis" min="-5" max="5">
+                    <span class="input-value" id="wis-value"></span>
+                </div>
+                <div class="ability">
+                    <label for="cha">Charisma:</label>
+                    <input type="number" id="cha" name="cha" min="-5" max="5">
+                    <span class="input-value" id="cha-value"></span>
+                </div>
+                <div class="ability">
+                    <label for="spi">Spirit:</label>
+                    <input type="number" id="spi" name="spi" min="-5" max="5">
+                    <span class="input-value" id="spi-value"></span>
+                </div>
+                <div class="ability">
+                    <label for="man">Mana:</label>
+                    <input type="number" id="man" name="man" min="-5" max="5">
+                    <span class="input-value" id="man-value"></span>
+                </div>
+                <!-- Add more ability fields as needed -->
+            </div>
+            <div class="proficiencies">
+                <h2>Proficiencies</h2>
+                
+                <div class="proficiency">
+                    <label for="acr">Acrobatics (dex):</label>
+                    <input type="checkbox" id="acr" name="acr">
+                    <span class="input-value" id="acr-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="ani">Animal Handling (wis):</label>
+                    <input type="checkbox" id="ani" name="ani">
+                    <span class="input-value" id="ani-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="arc">Arcana (int):</label>
+                    <input type="checkbox" id="arc" name="arc">
+                    <span class="input-value" id="arc-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="ath">Athletics (str):</label>
+                    <input type="checkbox" id="ath" name="ath">
+                    <span class="input-value" id="ath-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="dec">Deception (cha):</label>
+                    <input type="checkbox" id="dec" name="dec">
+                    <span class="input-value" id="dec-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="his">History (int):</label>
+                    <input type="checkbox" id="his" name="his">
+                    <span class="input-value" id="his-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="ins">Insight (wis):</label>
+                    <input type="checkbox" id="ins" name="ins">
+                    <span class="input-value" id="ins-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="itm">Intimidation (cha):</label>
+                    <input type="checkbox" id="itm" name="itm">
+                    <span class="input-value" id="itm-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="inv">Investigation (int):</label>
+                    <input type="checkbox" id="inv" name="inv">
+                    <span class="input-value" id="inv-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="med">Medicine (wis):</label>
+                    <input type="checkbox" id="med" name="med">
+                    <span class="input-value" id="med-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="nat">Nature (int):</label>
+                    <input type="checkbox" id="nat" name="nat">
+                    <span class="input-value" id="nat-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="per">Perception (wis):</label>
+                    <input type="checkbox" id="per" name="per">
+                    <span class="input-value" id="per-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="prf">Performance (cha):</label>
+                    <input type="checkbox" id="prf" name="prf">
+                    <span class="input-value" id="prf-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="prs">Persuasion (cha):</label>
+                    <input type="checkbox" id="prs" name="prs">
+                    <span class="input-value" id="prs-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="rel">Religion (int):</label>
+                    <input type="checkbox" id="rel" name="rel">
+                    <span class="input-value" id="rel-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="slt">Sleight of Hand (dex):</label>
+                    <input type="checkbox" id="slt" name="slt">
+                    <span class="input-value" id="slt-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="ste">Stealth (dex):</label>
+                    <input type="checkbox" id="ste" name="ste">
+                    <span class="input-value" id="ste-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="sur">Survival (wis):</label>
+                    <input type="checkbox" id="sur" name="sur">
+                    <span class="input-value" id="sur-value"></span>
+                </div>
+                <div class="proficiency">
+                    <label for="rid">Ride (dex):</label>
+                    <input type="checkbox" id="rid" name="rid">
+                    <span class="input-value" id="rid-value"></span>
+                </div>
+                
+            </div>
+        <button onclick="submitSheet()">Submit</button>  <!-- Add more sections for skills, equipment, etc. -->
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
